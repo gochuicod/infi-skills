@@ -7,7 +7,9 @@ Shared AI skills and agents for the InfiGroup team. Single source of truth for r
 | Person | Role | What's here |
 |--------|------|-------------|
 | **Darelle** | Dev | Full-stack skills, session memory, project context, web extraction |
+| **Dolly** | Dev | Dev workflow skills |
 | **Kim** | Marketing | Content briefs, caption writers, hashtag generators, campaign analysis, strategy |
+| **Kelly** | Marketing | Content and strategy skills |
 | **Josh** | Design | Moodboards, visual direction briefs, brand consistency checks, Figma prompt helpers |
 | **All** | Any role | Any validated Claude Code skill or AI agent prompt ready to share |
 
@@ -17,13 +19,20 @@ Shared AI skills and agents for the InfiGroup team. Single source of truth for r
 infi-skills/
 ├── skills/
 │   ├── darelle/          # Darelle's Claude Code skills
+│   ├── dolly/            # Dolly's Claude Code skills
 │   ├── kim/              # Kim's skills
+│   │   ├── content/      # Content creation skills
+│   │   └── strategy/     # Strategy and research skills
+│   ├── kelly/            # Kelly's skills
 │   │   ├── content/      # Content creation skills
 │   │   └── strategy/     # Strategy and research skills
 │   └── josh/             # Josh's design skills
 └── agents/
     ├── kim/              # Kim's agents
     │   └── content/      # Content generation agents
+    ├── kelly/            # Kelly's agents
+    │   └── content/      # Content generation agents
+    ├── dolly/            # Dolly's agents
     └── josh/             # Josh's design agents
 ```
 
@@ -80,7 +89,9 @@ version: 1.0.0
 | Person | Role |
 |--------|------|
 | Darelle Gochuico | Dev |
+| Dolly | Dev |
 | Kim Montejo | Marketing |
+| Kelly | Marketing |
 | Josh | Design |
 
 ---
