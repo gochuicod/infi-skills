@@ -9,6 +9,7 @@ Shared AI skills and agents for the InfiGroup team. Single source of truth for r
 | **Marketing** | Content briefs, caption writers, hashtag generators, campaign analysis |
 | **Strategy** | Competitive research, audience segmentation, insight summarizers |
 | **Dev** | Code review, architecture review, debugging workflows |
+| **Design** | Moodboards, visual direction briefs, brand consistency checks, Figma prompt helpers |
 | **All teams** | Any validated Claude Code skill or AI agent prompt ready to share |
 
 ## Structure
@@ -19,10 +20,12 @@ infi-skills/
 │   ├── marketing/    # Marketing-specific skills
 │   ├── content/      # Content creation and editing skills
 │   ├── strategy/     # Strategy and research skills
+│   ├── design/       # Design workflow skills
 │   └── dev/          # Development workflow skills
 └── agents/
     ├── marketing/    # Marketing agents (social, email, calendar)
-    └── content/      # Content generation agents
+    ├── content/      # Content generation agents
+    └── design/       # Design direction and visual brief agents
 ```
 
 ## How to Use a Skill in Claude Code
@@ -52,7 +55,7 @@ Skills in `agents/` are self-contained prompts. Copy the prompt directly into Cl
 name: your-skill-name
 description: One sentence — what does this skill do?
 author: Your Name
-team: marketing | content | strategy | dev
+team: marketing | content | strategy | design | dev
 version: 1.0.0
 ---
 
@@ -77,6 +80,7 @@ version: 1.0.0
 
 | Team | Contact |
 |------|---------|
+| Design | Josh |
 | Marketing | Kim Montejo |
 | Dev | Darelle Gochuico |
 
