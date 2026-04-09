@@ -4,28 +4,27 @@ Shared AI skills and agents for the InfiGroup team. Single source of truth for r
 
 ## Who This Is For
 
-| Team | What's here for you |
-|------|---------------------|
-| **Marketing** | Content briefs, caption writers, hashtag generators, campaign analysis |
-| **Strategy** | Competitive research, audience segmentation, insight summarizers |
-| **Dev** | Code review, architecture review, debugging workflows |
-| **Design** | Moodboards, visual direction briefs, brand consistency checks, Figma prompt helpers |
-| **All teams** | Any validated Claude Code skill or AI agent prompt ready to share |
+| Person | Role | What's here |
+|--------|------|-------------|
+| **Darelle** | Dev | Full-stack skills, session memory, project context, web extraction |
+| **Kim** | Marketing | Content briefs, caption writers, hashtag generators, campaign analysis, strategy |
+| **Josh** | Design | Moodboards, visual direction briefs, brand consistency checks, Figma prompt helpers |
+| **All** | Any role | Any validated Claude Code skill or AI agent prompt ready to share |
 
 ## Structure
 
 ```
 infi-skills/
 ├── skills/
-│   ├── marketing/    # Marketing-specific skills
-│   ├── content/      # Content creation and editing skills
-│   ├── strategy/     # Strategy and research skills
-│   ├── design/       # Design workflow skills
-│   └── dev/          # Development workflow skills
+│   ├── darelle/          # Darelle's Claude Code skills
+│   ├── kim/              # Kim's skills
+│   │   ├── content/      # Content creation skills
+│   │   └── strategy/     # Strategy and research skills
+│   └── josh/             # Josh's design skills
 └── agents/
-    ├── marketing/    # Marketing agents (social, email, calendar)
-    ├── content/      # Content generation agents
-    └── design/       # Design direction and visual brief agents
+    ├── kim/              # Kim's agents
+    │   └── content/      # Content generation agents
+    └── josh/             # Josh's design agents
 ```
 
 ## How to Use a Skill in Claude Code
@@ -34,7 +33,7 @@ infi-skills/
 2. Invoke it in any Claude Code session with `/<skill-name>`
 
 ```bash
-cp -r skills/marketing/content-brief ~/.claude/skills/content-brief
+cp -r skills/darelle/fullstack-expertise ~/.claude/skills/fullstack-expertise
 ```
 
 ## How to Use a Standalone Agent
@@ -43,7 +42,7 @@ Skills in `agents/` are self-contained prompts. Copy the prompt directly into Cl
 
 ## Contributing a Skill
 
-1. Create your skill folder: `skills/<category>/<skill-name>/`
+1. Create your skill folder: `skills/<your-name>/<skill-name>/`
 2. Add a `skill.md` with your prompt (see template below)
 3. Add a `README.md` describing what it does and example inputs/outputs
 4. Open a pull request
@@ -76,13 +75,13 @@ version: 1.0.0
 - **Include examples** — add sample inputs/outputs in the README
 - **No secrets** — never include API keys, passwords, or client data
 
-## Team Contacts
+## Contributors
 
-| Team | Contact |
-|------|---------|
-| Design | Josh |
-| Marketing | Kim Montejo |
-| Dev | Darelle Gochuico |
+| Person | Role |
+|--------|------|
+| Darelle Gochuico | Dev |
+| Kim Montejo | Marketing |
+| Josh | Design |
 
 ---
 
